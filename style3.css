@@ -1,0 +1,68 @@
+body{
+	background:url(Nature.jpg);
+	background-size: 100% 710px;
+	padding-top:50px;
+}
+#nav{
+	color:white;
+	padding-top:35px;
+	padding-left:60px;
+	font-size:18px;
+	background:grey;
+	width:325px;
+	height:350px;
+	margin:auto;
+	border-radius:10px;
+	opacity:.8;
+	font-weight:bold;
+	
+}
+#nav input{
+	margin-top:0.5px;
+	width:250px;
+	height:30px;
+	font-size:15px;
+	border-radius:5px;
+	
+}
+#nav input[name="email"]{
+	width:400px;
+}
+#nav input[type="button"]{
+	margin-top:10px;
+	width:150px;
+	border-radius:50px;
+	margin-left:50px;
+	height:50px;
+	background:orange;
+	color:white;
+	font-weight:bold;
+}
+#nav input[type="button"]:hover{
+	background:red;
+	color:white;
+}
+#h3 input{
+	color:white;
+	padding-top:40px;
+	padding-left:60px;
+	font-size:15px;
+	background:red;
+	width:470px;
+	height:400px;
+	margin:auto;
+	border-radius:10px;
+	opacity:.8;
+}
+#nav1{
+	color:white;
+	padding-top:35px;
+	padding-left:60px;
+	font-size:18px;
+	background:grey;
+	width:356px;
+	height:200px;
+	margin:auto;
+	border-radius:10px;
+	opacity:.8;
+	font-weight:bold;

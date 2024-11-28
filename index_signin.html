@@ -1,0 +1,37 @@
+<html>
+<head><title>Signin Page</title>
+<link rel="stylesheet" type="text/css" href="style3.css">
+<script type="text/javascript">
+function validateForm() {
+    var x = document.forms["myForm"]["Username"].value;
+    var y = document.forms["myForm"]["Password"].value;
+    var letters = /^[0-9a-zA-Z]+$/;
+    if (x == "" && y=="") {
+        alert("Fields are empty. Please entry username and password");
+        return false;
+    }
+    if(x.match(letters) && y.match(letters)){
+    alert("You have successfully loggedin");
+	window.location.href = "pgm2.html";
+    }
+    else{
+        alert("Incorrect Username or password please enter alphabets and numbers only");
+    }
+}
+</script>
+</head>
+<body>
+<div id="nav">
+Excisiting Users Signin 
+<form name="myForm">
+<input placeholder="Username" type="Username" name="Username"><br><br> 
+<input placeholder="Password" type="Password" name="Password"><br><br>
+<input type="button" value="Signin" onclick="javascript:validateForm()">
+
+<p>New User Signup to Signin</p>
+<input type="button" value="SignUp" onclick="location.href='signup.html';"><br><br>
+</form>
+</div>
+</body>
+</html>
+

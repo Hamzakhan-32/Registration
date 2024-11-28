@@ -1,0 +1,35 @@
+<html>
+<head><title>Sign Up</title>
+<link rel="stylesheet" type="text/css" href="style3.css">
+<script type="text/javascript">
+function validateForm() {
+    var x = document.forms["myForm"]["Username"].value;
+    var y = document.forms["myForm"]["Password"].value;
+    var letters = /^[0-9a-zA-Z]+$/;
+    if (x == "" && y=="") {
+        alert("Fields are empty. Please entry all the fields before sigining up");
+        return false;
+    }
+    if(x.match(letters) && y.match(letters)){
+    alert("You have successfully signedup");
+	window.location.href = "signin.html";
+    }
+    else{
+        alert("Incorrect Username or password please enter alphabets and numbers only");
+    }
+}
+</script>
+</head>
+<body>
+<div id="nav"> 
+<form name="myForm" method="post">
+ <h3>Create New Account<h3>
+<input placeholder="Username" type="Username" name="Username"><br><br> 
+<input placeholder="Password" type="Password" name="Password"><br><br>
+<input placeholder="Email" type="Email" name="Email"><br><br> 
+<input type="button" value="signup" onclick="javascript:validateForm()">
+
+</form>
+</div>
+</body>
+</html>
